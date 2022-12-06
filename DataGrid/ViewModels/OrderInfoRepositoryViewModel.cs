@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataGrid
 {
-    public class OrderInfoRepositoryVewModel
+    public class OrderInfoRepositoryViewModel
     {
         private ObservableCollection<OrderInfoModel> orderInfo;
         public ObservableCollection<OrderInfoModel> OrderInfoCollection
@@ -17,7 +17,7 @@ namespace DataGrid
             set { this.orderInfo = value; }
         }
 
-        public OrderInfoRepositoryVewModel()
+        public OrderInfoRepositoryViewModel()
         {
             orderInfo = new ObservableCollection<OrderInfoModel>();
             this.GenerateOrders();

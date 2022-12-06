@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using DataGrid.ViewModels;
+using DataGrid.Views;
+using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
 using Syncfusion.Maui.DataGrid.Hosting;
 
@@ -16,11 +18,19 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-		builder.ConfigureSyncfusionCore();
+        builder.Services.AddSingleton<About>();
+        builder.Services.AddSingleton<AboutViewModel>();
+        builder.Services.AddSingleton<SettingView>();
+        builder.Services.AddSingleton<SettingViewModel>();
+
+        builder.ConfigureSyncfusionCore();
 		builder.ConfigureSyncfusionDataGrid();
+		
+
+
 
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

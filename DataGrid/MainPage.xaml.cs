@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
         SfDataGrid dataGrid = new();
         Content = dataGrid;
 
-        OrderInfoRepositoryVewModel viewModel = new OrderInfoRepositoryVewModel();
+        OrderInfoRepositoryViewModel viewModel = new OrderInfoRepositoryViewModel();
         dataGrid.ItemsSource = viewModel.OrderInfoCollection;
     }
 

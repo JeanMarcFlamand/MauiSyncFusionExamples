@@ -6,7 +6,7 @@
              x:Class="DataGrid.MainPage">
     
     <ContentPage.BindingContext>
-        <local:OrderInfoRepositoryVewModel x:Name="viewModel" />
+        <local:OrderInfoRepositoryViewModel x:Name="viewModel" />
     </ContentPage.BindingContext>
 
     <ContentPage.Content>

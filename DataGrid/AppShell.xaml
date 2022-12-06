@@ -4,11 +4,45 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DataGrid"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:DataGrid.Views"
+    Shell.FlyoutBehavior="Flyout">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+            <Label Text="SyncFusion DataGrid"></Label>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="SyncFusion DataGrid  To move">
+
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        
+    </FlyoutItem>
+
+    <!--<FlyoutItem Title="Settings">
+
+        <ShellContent
+            Title="Home1"
+            ContentTemplate="{DataTemplate views : About}"
+            Route="About" />
+
+    </FlyoutItem>-->
+    
+    
+    <FlyoutItem Title="About">
+
+        <ShellContent
+            Title="Home1"
+            ContentTemplate="{DataTemplate views: SettingViews}"
+            Route="SettingView" />
+
+    </FlyoutItem>
+    
+       
+    
 
 </Shell>
