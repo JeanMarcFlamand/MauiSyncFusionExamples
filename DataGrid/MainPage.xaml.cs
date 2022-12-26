@@ -9,11 +9,11 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-        SfDataGrid dataGrid = new();
-        Content = dataGrid;
+        //SfDataGrid dataGrid = new();
+        //Content = dataGrid;
 
-        OrderInfoRepositoryViewModel viewModel = new OrderInfoRepositoryViewModel();
-        dataGrid.ItemsSource = viewModel.OrderInfoCollection;
+        //OrderInfoRepositoryViewModel viewModel = new OrderInfoRepositoryViewModel();
+        //dataGrid.ItemsSource = viewModel.OrderInfoCollection;
     }
 
 	

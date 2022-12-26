@@ -7,6 +7,30 @@
         <Label 
             Text="Welcome to About me!"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            />
+        <Button Text="Submit Order" CornerRadius="5" TextColor="White">
+            <Button.Background>
+                <LinearGradientBrush  StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="White"
+                  Offset=".05" />
+                    <GradientStop Color="DarkSlateGrey"
+                  Offset=".5" />
+                    <GradientStop Color="White"
+                  Offset="1.2" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button Text="Submit Order1" CornerRadius="5" TextColor="Black">
+            <Button.Background>
+                <RadialGradientBrush >
+                    <GradientStop Color="LightSteelBlue" Offset=".75"/>
+                    <GradientStop Color="LightGray" Offset="1"/>
+
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+
     </VerticalStackLayout>
 </ContentPage>

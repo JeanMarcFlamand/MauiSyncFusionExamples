@@ -4,8 +4,11 @@
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
              xmlns:local="clr-namespace:DataGrid"
              x:Class="DataGrid.MainPage">
+
     
-    <ContentPage.BindingContext>
+    <Label Text="Main Page"/>
+
+    <!--<ContentPage.BindingContext>
         <local:OrderInfoRepositoryViewModel x:Name="viewModel" />
     </ContentPage.BindingContext>
 
@@ -13,13 +16,9 @@
         <syncfusion:SfDataGrid x:Name="dataGrid"
                                ItemsSource="{Binding OrderInfoCollection}">
         </syncfusion:SfDataGrid>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
 
+    
 
-
-
-    <syncfusion:SfDataGrid>
-        
-    </syncfusion:SfDataGrid>
 
 </ContentPage>

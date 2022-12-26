@@ -8,5 +8,6 @@ public partial class SettingView : ContentPage
 	{
 		InitializeComponent();
 		BindingContext= vm;
+		
 	}
 }

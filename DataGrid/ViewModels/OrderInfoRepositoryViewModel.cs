@@ -25,7 +25,7 @@ namespace DataGrid
 
         public void GenerateOrders()
         {
-            orderInfo.Add(new OrderInfoModel("1001", "Maria Anders", "Germany", "ALFKI", "Berlin"));
+            orderInfo.Add(new OrderInfoModel("1001", "Jean-Marc Flamand", "Germany", "ALFKI", "Berlin"));
             orderInfo.Add(new OrderInfoModel("1002", "Ana Trujillo", "Mexico", "ANATR", "Mexico D.F."));
             orderInfo.Add(new OrderInfoModel("1003", "Ant Fuller", "Mexico", "ANTON", "Mexico D.F."));
             orderInfo.Add(new OrderInfoModel("1004", "Thomas Hardy", "UK", "AROUT", "London"));

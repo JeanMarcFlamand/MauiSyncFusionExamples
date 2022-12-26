@@ -14,33 +14,45 @@
         </VerticalStackLayout>
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="SyncFusion DataGrid  To move">
+    <FlyoutItem Title="Home">
 
         <ShellContent
-            Title="Home"
+            Title="Main Page"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Order Info Repository  To move">
+
+        <ShellContent
+            Title="Order Info Repository"
+            ContentTemplate="{DataTemplate views:OrderInfoRepositoryView}"
+            Route="OrderInfoRepositoryView" />
         
     </FlyoutItem>
 
-    <!--<FlyoutItem Title="Settings">
+    <FlyoutItem Title="Settings">
 
         <ShellContent
-            Title="Home1"
-            ContentTemplate="{DataTemplate views : About}"
-            Route="About" />
-
-    </FlyoutItem>-->
-    
-    
-    <FlyoutItem Title="About">
-
-        <ShellContent
-            Title="Home1"
-            ContentTemplate="{DataTemplate views: SettingViews}"
+            Title="Settings"
+            ContentTemplate="{DataTemplate views:SettingView }"
             Route="SettingView" />
 
     </FlyoutItem>
+
+
+    <FlyoutItem Title="About me">
+
+        <ShellContent
+            Title="About me"
+            ContentTemplate="{DataTemplate views:About}"
+            Route="About" />
+
+    </FlyoutItem>
+    
+    
+   
     
        
     

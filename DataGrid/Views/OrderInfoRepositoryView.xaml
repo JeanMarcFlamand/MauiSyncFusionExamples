@@ -2,11 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DataGrid.Views.OrderInfoRepositoryView"
-             Title="OrderInfoRepositoryView">
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+             xmlns:local="clr-namespace:DataGrid"
+             Title="Order Info Repository View">
+    <ContentPage.BindingContext>
+        <local:OrderInfoRepositoryViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        
+        <syncfusion:SfDataGrid x:Name="dataGrid"
+                               ItemsSource="{Binding OrderInfoCollection}">
+        </syncfusion:SfDataGrid>
+    </ContentPage.Content>
+
+
     <VerticalStackLayout>
-        <Label 
-            Text="Order Info Repository"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+       
+        
     </VerticalStackLayout>
 </ContentPage>
