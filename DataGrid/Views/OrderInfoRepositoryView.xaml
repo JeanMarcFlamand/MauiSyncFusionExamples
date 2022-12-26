@@ -5,20 +5,29 @@
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
              xmlns:local="clr-namespace:DataGrid"
              Title="Order Info Repository View">
+
+
     <ContentPage.BindingContext>
         <local:OrderInfoRepositoryViewModel x:Name="viewModel" />
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
+
+        <VerticalStackLayout>
+
+            <Label Text="OrderInfo"
+                   Margin="10,10,10,10"
+                   TextColor="White"
+                   BackgroundColor="Red"/>
+
+            <syncfusion:SfDataGrid x:Name="dataGrid"
+                                   ItemsSource="{Binding OrderInfoCollection}">
+            </syncfusion:SfDataGrid>
         
-        <syncfusion:SfDataGrid x:Name="dataGrid"
-                               ItemsSource="{Binding OrderInfoCollection}">
-        </syncfusion:SfDataGrid>
+        </VerticalStackLayout>
+
     </ContentPage.Content>
-
-
-    <VerticalStackLayout>
-       
-        
-    </VerticalStackLayout>
+     
+   
+    
 </ContentPage>

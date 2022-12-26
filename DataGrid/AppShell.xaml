@@ -23,7 +23,7 @@
 
     </FlyoutItem>
 
-    <FlyoutItem Title="Order Info Repository  To move">
+    <FlyoutItem Title="Order Info Repository">
 
         <ShellContent
             Title="Order Info Repository"

@@ -2,7 +2,6 @@
 using DataGrid.Views;
 using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
-using Syncfusion.Maui.DataGrid.Hosting;
 
 namespace DataGrid;
 
@@ -24,7 +23,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<SettingViewModel>();
 
         builder.ConfigureSyncfusionCore();
-		builder.ConfigureSyncfusionDataGrid();
+		
 		
 
 
