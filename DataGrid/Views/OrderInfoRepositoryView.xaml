@@ -13,7 +13,8 @@
 
     <ContentPage.Content>
 
-        <VerticalStackLayout>
+        <VerticalStackLayout Margin="20"
+                             Spacing="10">
 
             <Label Text="OrderInfo"
                    Margin="10,10,10,10"
@@ -27,7 +28,9 @@
         </VerticalStackLayout>
 
     </ContentPage.Content>
-     
-   
+
     
+ 
+
+
 </ContentPage>

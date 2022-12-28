@@ -9,7 +9,7 @@ public partial class OrderInfoRepositoryView : ContentPage
 		InitializeComponent();
 		//BindingContext = vm.OrderInfoCollection;
         SfDataGrid dataGrid = new();
-        Content = dataGrid;
+        
 
         OrderInfoRepositoryViewModel viewModel = new OrderInfoRepositoryViewModel();
         dataGrid.ItemsSource = viewModel.OrderInfoCollection;
